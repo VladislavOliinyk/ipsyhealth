@@ -5,13 +5,11 @@ import Container from "./Container"
 
 const nav = [
   { href: "/", label: "Головна" },
-  { href: "/about", label: "Про нас" },
+  { href: "/team", label: "Команда" },
   { href: "/services", label: "Допомога" },
   { href: "/projects", label: "Навчальні проєкти" },
-  { href: "/team", label: "Команда" },
-  { href: "/blog", label: "Блог" },
   { href: "/contacts", label: "Контакти" },
-  { href: "/donate", label: "Підтримати" },
+  { href: "/about", label: "Про нас" },
 ]
 
 export default function Header() {
