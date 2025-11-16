@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Інститут Психології Здоровʼя — Головна</title>
+  <meta name="description" content="Інститут Психології Здоровʼя — освітні та психологічні послуги, науково-методична діяльність, підтримка благодійниками та волонтерами.">
+  <meta property="og:title" content="Інститут Психології Здоровʼя">
+  <meta property="og:description" content="Освітні та психологічні послуги.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ipsyhealth.site">
+  <meta property="og:image" content="https://placehold.co/1200x630/png?text=OG+Image+TODO">
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto'] } } }
+    }
+  </script>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="min-h-screen antialiased bg-[var(--bg-main)] text-slate-800">
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-50 bg-[var(--nav-bg)] text-[var(--nav-text)] shadow">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a href="#hero" class="font-semibold tracking-wide hover:text-[var(--nav-accent)] transition">ІПЗ</a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a class="nav-link" href="#projects">Наші проєкти</a>
+        <a class="nav-link" href="#education">Навчальні проєкти</a>
+        <a class="nav-link" href="#updates">Оновлення програм</a>
+        <a class="nav-link" href="#partners">Партнери</a>
+        <a class="nav-link" href="#contact">Контакти</a>
+      </nav>
+      <button id="burger" class="md:hidden p-2 rounded hover:bg-white/10" aria-label="Меню">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    <div id="mobileNav" class="md:hidden hidden border-t border-white/10 bg-[var(--nav-bg)]">
+      <div class="px-4 py-3 space-y-2">
+        <a class="nav-link block" href="#projects">Наші проєкти</a>
+        <a class="nav-link block" href="#education">Навчальні проєкти</a>
+        <a class="nav-link block" href="#updates">Оновлення програм</a>
+        <a class="nav-link block" href="#partners">Партнери</a>
+        <a class="nav-link block" href="#contact">Контакти</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero / Banner -->
+  <section id="hero" class="relative overflow-hidden">
+    <div class="mx-auto max-w-5xl px-4 py-20 sm:py-24 text-center">
+      <!-- LOGO placeholder -->
+      <div class="mx-auto mb-6 h-28 w-28 rounded-full bg-white/70 ring-4 ring-[var(--divider-yellow)] flex items-center justify-center text-slate-500 font-semibold">
+        LOGO
+      </div>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[var(--brand-blue)] tracking-wide" data-aos="fade-up">
+        ІНСТИТУТ ПСИХОЛОГІЇ ЗДОРОВʼя
+      </h1>
+      <p class="mt-4 text-lg sm:text-xl text-slate-700" data-aos="fade-up" data-aos-delay="100">
+        Є неприбутковою організацією, яка надає освітні та психологічні послуги,
+        займається науково-методичною роботою та існує завдяки благодійній підтримці та волонтерам.
+      </p>
+      <div class="mt-6 flex items-center justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+        <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" class="social-icon" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+      </div>
+      <div class="mt-8 h-1 w-40 mx-auto bg-[var(--divider-yellow)]"></div>
+    </div>
+  </section>
+
+  <!-- Vision / Values Slider -->
+  <section class="py-14">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="swiper visionSwiper rounded-2xl shadow overflow-hidden">
+        <div class="swiper-wrapper">
+          <!-- Slide 1: Наше бачення -->
+          <div class="swiper-slide">
+            <div class="p-10 md:p-16 bg-[var(--brand-blue)] text-white min-h-[320px] flex flex-col justify-center" role="group" aria-roledescription="slide">
+              <div class="flex items-center gap-3 mb-4">
+                <i class="fa-solid fa-book text-2xl"></i>
+                <h2 class="text-2xl sm:text-3xl font-bold">Наше бачення</h2>
+              </div>
+              <p class="text-lg leading-relaxed" data-aos="fade-up">
+                Ми сприяємо розвитку здорової та щасливої спільноти через впровадження передових досліджень
+                у сфері психології здоров'я, освітніх програм та підтримки психічного благополуччя.
+              </p>
+            </div>
+          </div>
+          <!-- Slide 2: Наші цінності -->
+          <div class="swiper-slide">
+            <div class="p-10 md:p-16 bg-blue-600/90 text-white min-h-[320px] flex flex-col justify-center">
+              <div class="flex items-center gap-3 mb-4">
+                <i class="fa-solid fa-heart text-2xl"></i>
+                <h2 class="text-2xl sm:text-3xl font-bold">Наші цінності</h2>
+              </div>
+              <ul class="space-y-2 text-lg">
+                <li data-aos="fade-up">Професіоналізм і науковий підхід</li>
+                <li data-aos="fade-up" data-aos-delay="100">Турбота про психічне здоров'я кожної людини</li>
+                <li data-aos="fade-up" data-aos-delay="200">Інновації та розвиток</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16 bg-white/70">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="section-title">Наші проєкти</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Left column -->
+        <div class="card">
+          <h3 class="card-title">ГРУПИ ПІДТРИМКИ</h3>
+          <ul class="list-bullets">
+            <li>Групи стабілізації та підтримки для дітей;</li>
+            <li>Групи стабілізації та підтримки для дорослих;</li>
+            <li>Групи психологічної підтримки військовослужбовців і ветеранів;</li>
+            <li>Групи підтримки для дорослих, у яких є зниклі безвісті та полонені;</li>
+            <li>Родинний кемпінг разом з партерами ГО «Серце Азовсталі» (психофізичне відновлення родин захисників Маріуполя;</li>
+            <li>Родинний кемпінг разом з партерами ГО «Серце Азовсталі» (психофізичне відновлення родин захисників Маріуполя;</li>
+            <li>Група самодопомоги з точкового масажу за методом ТТТ (техніка натискання травми).</li>
+          </ul>
+        </div>
+        <!-- Right column -->
+        <div class="card">
+          <h3 class="card-title">Програма для дорослих, підлітків і дітей, які втратили близьких внаслідок смерті</h3>
+          <ul class="list-bullets">
+            <li>група психологічної підтримки дружин загиблих військовослужбовців;</li>
+            <li>групи підтримки для людей, які втратили близьких внаслідок самогубства;</li>
+            <li>групи підтримки для жінок, які втратили дитину під час вагітності або пологів;</li>
+            <li>психологічна підтримка людей, які втратили улюблену тварину;</li>
+            <li>програма реабілітації для батьків загиблих захисників Маріуполя разом з партерами ГО «Серце Азовсталі»;</li>
+            <li>психологічний супровід дітей, які втратили близьких.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-16">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="section-title">НАВЧАЛЬНІ ПРОЄКТИ</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="card">
+          <ol class="list-decimal pl-6 space-y-2">
+            <li><strong>Біосугестивна терапія (БСТ)</strong> (авторський метод Олександра Стражного) — простий ефективний метод комплексного відновлення... (тренер – Володимир Волошин);</li>
+            <li><strong>8-крокова програма по роботі з горем і втратою</strong> — для психологів і психотерапевтів, сертифікується, дає можливість вести групи;</li>
+            <li><strong>СУПЕРВІЗІЙНІ І КОНСУЛЬТАТИВНІ ГРУПИ</strong> (теми: втрата; невизначена втрата; пренатальна втрата; втрата під час війни; онкозахворювання; діти; психічна травма).</li>
+          </ol>
+        </div>
+        <div class="card">
+          <h3 class="card-title">«ОСНОВИ ПСИХОТРАВМАТОЛОГІЇ» — КОМПЛЕКСНА НАВЧАЛЬНА (12 модулів)</h3>
+          <ul class="list-bullets">
+            <li>І модуль "Основи психотравматології";</li>
+            <li>ІІ модуль "Основи психотравматології";</li>
+            <li>ІІІ модуль “Кризова терапія”;</li>
+            <li>IV модуль “Лікування ПТСР у EMDR і Brainspotting”;</li>
+            <li>V модуль "Ресурсна інтегративна арттерапія в роботі з дитячою травмою";</li>
+            <li>VІ модуль "Діти та психологічна травма. Особливості психотерапії";</li>
+            <li>VІІ модуль "Тіло та психологічна травма. Інструменти зцілення";</li>
+            <li>VІІІ модуль "Відновлення після полону";</li>
+            <li>ІХ модуль «Робота з військовими / ветеранами... Сексуальність з інвалідністю»;</li>
+            <li>Х модуль "Втрата та горювання... діти" (6–9 жовтня);</li>
+            <li>ХІ модуль "Робота з втратою (дорослі)";</li>
+            <li>ХІІ модуль "Профілактика вигоряння".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Updates CTA -->
+  <section id="updates" class="py-14 bg-[var(--brand-blue)] text-white">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="md:flex items-center justify-between gap-8">
+        <h2 class="text-2xl md:text-3xl font-bold">Теми і зміст наших програм весь час оновлюються</h2>
+        <div class="mt-6 md:mt-0 flex gap-3">
+          <a class="btn-accent" href="https://t.me/HealthPsycholog" target="_blank" rel="noopener">Telegram</a>
+          <a class="btn-accent" href="https://www.facebook.com/InstituteofHealthPsychology" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <p class="mt-3 opacity-90">Слідкуйте за анонсами — підписуйтесь на наші канали.</p>
+    </div>
+  </section>
+
+  <!-- Partners slider -->
+  <section id="partners" class="py-16 bg-white/70">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="section-title">Партнери</h2>
+      <div class="mt-8 swiper partnersSwiper">
+        <div class="swiper-wrapper">
+          <!-- Repeat slides with PNG logos -->
+          <div class="swiper-slide">
+            <div class="partner-logo" role="img" aria-label="Партнер 1">
+              <img src="https://placehold.co/220x100/png?text=Logo+1" alt="Логотип партнера 1">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="partner-logo" role="img" aria-label="Партнер 2">
+              <img src="https://placehold.co/220x100/png?text=Logo+2" alt="Логотип партнера 2">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="partner-logo">
+              <img src="https://placehold.co/220x100/png?text=Logo+3" alt="Логотип партнера 3">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="partner-logo">
+              <img src="https://placehold.co/220x100/png?text=Logo+4" alt="Логотип партнера 4">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="partner-logo">
+              <img src="https://placehold.co/220x100/png?text=Logo+5" alt="Логотип партнера 5">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer id="contact" class="bg-[var(--footer-bg)] text-white mt-12">
+    <div class="mx-auto max-w-6xl px-4 py-10 grid gap-8 md:grid-cols-3">
+      <div>
+        <h3 class="font-bold text-lg">Інститут Психології Здоровʼя</h3>
+        <p class="mt-2 text-white/80">© <span id="year"></span>. Усі права захищені.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold">Контакти</h4>
+        <ul class="mt-2 space-y-1 text-white/80">
+          <li>Email: <a class="underline hover:text-[var(--nav-accent)]" href="mailto:info@example.com">info@example.com</a></li>
+          <li>Телефон: <a class="underline hover:text-[var(--nav-accent)]" href="tel:+380000000000">+38 (000) 000-00-00</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold">Ми в мережі</h4>
+        <div class="mt-2 flex gap-3">
+          <a class="social-icon" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="social-icon" href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a class="social-icon" href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
